@@ -1,0 +1,95 @@
+/* Light Mode Defaults */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafb;
+  color: #111;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+body.dark-mode header,
+body.dark-mode footer {
+  background: #1e293b;
+}
+body.dark-mode .card {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+body.dark-mode .btn {
+  background: #38bdf8;
+  color: #111;
+}
+body.dark-mode .mode-btn {
+  background: #334155;
+  color: #f8fafc;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8, #06b6d4);
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.mode-btn {
+  background: white;
+  color: #0284c7;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  background: linear-gradient(120deg, #e0f2fe, #f0fdf4);
+}
+.hero-text h2 { font-size: 2.4rem; color: #0284c7; }
+.hero-text p { max-width: 550px; font-size: 1.2rem; }
+.hero-img img { width: 100%; border-radius: 14px; }
+
+/* Highlights */
+.highlights {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #fafafa;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Footer */
+footer {
+  background: #0ea5e9;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
