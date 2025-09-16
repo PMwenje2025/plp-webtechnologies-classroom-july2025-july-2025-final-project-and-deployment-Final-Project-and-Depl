@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact NextGen Health Solutions — Nairobi-based, working across Africa." />
+  <title>Contact · NextGen Health Solutions</title>
+  <link rel="preload" href="assets/images/hero.svg" as="image" />
+  <link rel="icon" href="assets/images/icon1.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-page="contact">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header bg-white/80 dark:bg-slate-900/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
+  <div class="container mx-auto max-w-7xl px-4 flex items-center justify-between gap-4">
+    <a class="brand" href="index.html" aria-label="NextGen Home">
+      <span class="logo">🏥</span><span class="brand-text">NextGen Health Solutions</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <button id="navToggle" class="nav__toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">☰</button>
+      <ul id="navMenu" class="nav__menu">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="services.html" data-nav="services">Services</a></li>
+        <li><a href="case-studies.html" data-nav="cases">Case Studies</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark mode">🌓</button>
+  </div>
+</header>
+
+<main id="main" class="section py-8 md:py-10">
+  <div class="container mx-auto max-w-7xl px-4">
+    <h1 class="section-title reveal">Contact</h1>
+    <div class="grid gap-6 md:grid-cols-2">
+      <form id="contactForm" class="contact-form reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <p class="hidden">
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" required minlength="2" />
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <div class="field">
+          <label for="email">Work Email</label>
+          <input id="email" name="email" type="email" required />
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <div class="field">
+          <label for="org">Organization</label>
+          <input id="org" name="org" required />
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <div class="field">
+          <label for="message">How can we help?</label>
+          <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <button type="submit" class="btn primary">Send</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+      <div class="reveal">
+        <h2>Offices</h2>
+        <p>Nairobi, Kenya 🇰🇪</p>
+        <p>Email: paulinemwenje1@gmail.com</p>
+        <p>Hours: Mon–Fri, 9:00–17:00 (EAT)</p>
+        <p>Phone: +254727434767</p>
+        <img src="assets/images/Nextgen.webp" alt="NextGen office team" />
+      </div>
+    </div>
+
+    <section class="section alt py-8 md:py-10">
+      <div class="container mx-auto max-w-7xl px-4">
+        <h2 class="section-title">FAQs</h2>
+        <div class="accordion">
+          <details>
+            <summary>Do you work with county governments?</summary>
+            <p>Yes, we partner with national and subnational teams to co-create and implement solutions.</p>
+          </details>
+          <details>
+            <summary>Can you support digital health procurements?</summary>
+            <p>We help draft requirements, evaluate vendors, and ensure interoperability and data governance.</p>
+          </details>
+          <details>
+            <summary>How do we start?</summary>
+            <p>Send a note via the form or request a consultation—we’ll respond within 2 business days.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container mx-auto max-w-7xl px-4">
+    <div class="grid gap-6 md:grid-cols-3 py-6">
+      <div>
+        <h3>NextGen Health Solutions</h3>
+        <p>We help governments, NGOs, and health providers design, finance, and scale strong primary health care systems.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form id="newsletterForm" class="newsletter" novalidate>
+          <label for="newsletterEmail" class="sr-only">Email</label>
+          <input id="newsletterEmail" type="email" placeholder="Email address" required />
+          <button type="submit">Subscribe</button>
+          <p class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+    <p class="copyright">© 2025 NextGen Health Solutions All rights reserved.</p>
+  </div>
+</footer>
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

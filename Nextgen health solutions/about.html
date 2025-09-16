@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About NextGen Consulting — mission, approach, and team." />
+  <title>About · NextGen Consulting</title>
+  <link rel="preload" href="assets/images/hero.svg" as="image" />
+  <link rel="icon" href="assets/images/icon1.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-page="about">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header bg-white/80 dark:bg-slate-900/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
+  <div class="container mx-auto max-w-7xl px-4 flex items-center justify-between gap-4">
+    <a class="brand" href="index.html" aria-label="NextGen Home">
+      <span class="logo">🏥</span><span class="brand-text">NextGen Consulting</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <button id="navToggle" class="nav__toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">☰</button>
+      <ul id="navMenu" class="nav__menu">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="services.html" data-nav="services">Services</a></li>
+        <li><a href="case-studies.html" data-nav="cases">Case Studies</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark mode">🌓</button>
+  </div>
+</header>
+
+<main id="main" class="section py-8 md:py-10">
+  <div class="container mx-auto max-w-7xl px-4">
+    <h1 class="section-title reveal">About NextGen</h1>
+    <p class="reveal">We are a health consultancy focused on resilient primary health care and community systems, combining policy expertise, program design, and digital transformation.</p>
+
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="reveal">
+        <h2>Our approach</h2>
+        <ol class="steps">
+          <li><strong>Listen & co-create:</strong> align with national & county priorities.</li>
+          <li><strong>Design:</strong> evidence-based models, costed and implementable.</li>
+          <li><strong>Enable:</strong> build capacity, tools, and data systems.</li>
+          <li><strong>Measure:</strong> track outcomes and iterate.</li>
+        </ol>
+      </div>
+      <div class="reveal">
+        <img src="https://images.pexels.com/photos/8460341/pexels-photo-8460341.jpeg?auto=compress&cs=tinysrgb&w=800" alt="NextGen consultants collaborating" />
+      </div>
+    </div>
+
+    <h2 class="reveal">Leadership</h2>
+    <div class="avatars">
+      <figure class="reveal"><img src="assets/images/pau.jpg" alt="Team lead 1" /><figcaption>Lead Consultant — Health Systems</figcaption></figure>
+      <figure class="reveal"><img src="https://images.pexels.com/photos/6129509/pexels-photo-6129509.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Team lead 2" /><figcaption>Principal — Digital Health</figcaption></figure>
+      <figure class="reveal"><img src="assets/images/pau.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Team lead 3" /><figcaption>Director — Financing & M&E</figcaption></figure>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container mx-auto max-w-7xl px-4">
+    <div class="grid gap-6 md:grid-cols-3 py-6">
+      <div>
+        <h3>NextGen Consulting</h3>
+        <p>We help governments, NGOs, and health providers design, finance, and scale strong primary health care systems.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form id="newsletterForm" class="newsletter" novalidate>
+          <label for="newsletterEmail" class="sr-only">Email</label>
+          <input id="newsletterEmail" type="email" placeholder="Email address" required />
+          <button type="submit">Subscribe</button>
+          <p class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+    <p>Phone: +254727434767</p>
+    <p class="copyright">© 2025 NextGen Consulting. All rights reserved.</p>
+  </div>
+</footer>
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Health care consultancy focused on health systems strengthening, financing, digital health, and M&E." />
+  <title>Home · Nextgen Health Solutions</title>
+  <link rel="preload" href="assets/images/hero.svg" as="image" />
+  <link rel="icon" href="assets/images/icon1.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-page="home">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header bg-white/80 dark:bg-slate-900/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
+  <div class="container mx-auto max-w-7xl px-4 flex items-center justify-between gap-4">
+    <a class="brand" href="index.html" aria-label="Nextgen Health Solutions Home">
+      <span class="logo">🏥</span><span class="brand-text">Nextgen Health Solutions</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <button id="navToggle" class="nav__toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">☰</button>
+      <ul id="navMenu" class="nav__menu">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="services.html" data-nav="services">Services</a></li>
+        <li><a href="case-studies.html" data-nav="cases">Case Studies</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark mode">🌓</button>
+  </div>
+</header>
+<main id="main">
+  <section class="hero">
+    <div class="container mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div class="hero-copy">
+        <h1 class="reveal">Elevating Health Systems</h1>
+        <p class="lead reveal">Nextgen partners with ministries, counties, NGOs, and providers to design, finance, and implement primary health care and community programs.</p>
+        <div class="actions reveal flex gap-3 mt-4">
+          <a class="btn primary" href="services.html">Our Services</a>
+          <a class="btn" href="case-studies.html">See Results</a>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <img src="assets/images/Nextgen.webp" alt="" role="presentation" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section py-8 md:py-10">
+    <div class="container mx-auto max-w-7xl px-4">
+      <h2 class="section-title reveal">What we do</h2>
+      <div class="grid gap-4 md:grid-cols-3">
+        <article class="card reveal">
+          <img src="assets/images/digital health photo.webp" alt="" role="presentation" />
+          <h3>Health Systems & PHC</h3>
+          <p>Service delivery redesign, community health strategies, workforce planning, and quality improvement.</p>
+        </article>
+        <article class="card reveal">
+          <img src="assets/images/icon2.svg" alt="" role="presentation" />
+          <h3>Digital Health & Data</h3>
+          <p>Requirements, interoperability, analytics, and decision dashboards for data-driven programs.</p>
+        </article>
+        <article class="card reveal">
+          <img src="assets/images/icon3.svg" alt="" role="presentation" />
+          <h3>Financing, M&E</h3>
+          <p>Costing, investment cases, results frameworks, routine monitoring, and evaluations.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt py-8 md:py-10">
+    <div class="container mx-auto max-w-7xl px-4">
+      <h2 class="section-title reveal">Trusted by health leaders</h2>
+      <div class="logos reveal">
+        <span>🇰🇪 Counties</span> <span>🇺🇳 UN Agencies</span> <span>🏥 Faith-based providers</span> <span>🌍 NGOs</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section py-8 md:py-10">
+    <div class="container grid-2">
+      <div class="reveal">
+        <h2>Impact you can measure</h2>
+        <ul class="ticks">
+          <li>Improved coverage of essential PHC services</li>
+          <li>Digitized community reporting with real-time dashboards</li>
+          <li>Optimized resource allocation and commodity availability</li>
+        </ul>
+        <a class="btn" href="case-studies.html">Explore case studies</a>
+      </div>
+      <div class="reveal">
+        <div class="stat-card">
+          <div><strong>50+</strong><span>Projects delivered</span></div>
+          <div><strong>15</strong><span>Counties supported</span></div>
+          <div><strong>3M+</strong><span>People reached indirectly</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-white/20">
+    <div class="container center">
+      <h2 class="reveal">Book a consultation</h2>
+      <p class="reveal">Tell us about your challenge—policy, digital, financing, or M&E—and we’ll chart a path.</p>
+      <button class="btn primary reveal" data-open-modal="consult">Request Consultation</button>
+    </div>
+  </section>
+
+  <div class="modal" id="consultModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Request consultation">
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" data-close-modal aria-label="Close">×</button>
+      <h3>Request a Consultation</h3>
+      <form id="consultForm" name="consult" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
+        <input type="hidden" name="form-name" value="consult" />
+        <div class="field"><label for="org">Organization</label><input id="org" name="org" required /></div>
+        <div class="field"><label for="email">Work Email</label><input id="email" name="email" type="email" required /></div>
+        <div class="field"><label for="topic">Topic</label>
+          <select id="topic" name="topic" required>
+            <option value="">Select…</option>
+            <option>Health Systems</option><option>Digital Health</option><option>Financing</option><option>M&E</option>
+          </select>
+        </div>
+        <div class="field"><label for="notes">Brief</label><textarea id="notes" name="notes" rows="5" minlength="10" required></textarea></div>
+        <button type="submit" class="btn primary">Send Request</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container mx-auto max-w-7xl px-4">
+    <div class="grid gap-6 md:grid-cols-3 py-6">
+      <div>
+        <h3>NextGen Health Solutions</h3>
+        <p>We help governments, NGOs, and health providers design, finance, and scale strong primary health care systems.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form id="newsletterForm" class="newsletter" novalidate>
+          <label for="newsletterEmail" class="sr-only">Email</label>
+          <input id="newsletterEmail" type="email" placeholder="Email address" required />
+          <button type="submit">Subscribe</button>
+          <p class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+    <p>Phone: +254727434767</p>
+    <p class="copyright">© 2025 NextGen Health Solutions. All rights reserved.</p>
+  </div>
+</footer>
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

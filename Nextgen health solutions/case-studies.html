@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Selected healthcare consultancy case studies." />
+  <title>Case Studies · NextGen Consulting</title>
+  <link rel="preload" href="assets/images/hero.svg" as="image" />
+  <link rel="icon" href="assets/images/icon1.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-page="cases">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header bg-white/80 dark:bg-slate-900/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
+  <div class="container mx-auto max-w-7xl px-4 flex items-center justify-between gap-4">
+    <a class="brand" href="index.html" aria-label="NextGen Home">
+      <span class="logo">🏥</span><span class="brand-text">NextGen Consulting</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <button id="navToggle" class="nav__toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">☰</button>
+      <ul id="navMenu" class="nav__menu">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="services.html" data-nav="services">Services</a></li>
+        <li><a href="case-studies.html" data-nav="cases">Case Studies</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark mode">🌓</button>
+  </div>
+</header>
+
+<main id="main" class="section py-8 md:py-10">
+  <div class="container mx-auto max-w-7xl px-4">
+    <h1 class="section-title reveal">Case Studies</h1>
+    <p class="reveal">A snapshot of our work across health systems, digital, financing, and M&E.</p>
+
+    <div class="filters reveal flex flex-wrap gap-2 my-4" role="group" aria-label="Filter case studies">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="systems">Health Systems</button>
+      <button class="chip" data-filter="digital">Digital Health</button>
+      <button class="chip" data-filter="financing">Financing</button>
+      <button class="chip" data-filter="me">M&E</button>
+    </div>
+
+    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <article class="card case reveal" data-category="systems">
+        <img src="assets/images/County_PHC_Service_Redesign.webp?auto=compress&cs=tinysrgb&w=1200" alt="" role="presentation" />
+        <h3>County PHC Service Redesign</h3>
+        <p>Supported county health leadership to redesign PHC, align CHP roles, and improve referral pathways.</p>
+        <ul class="tags"><li>Systems</li><li>PHC</li></ul>
+      </article>
+      <article class="card case reveal" data-category="digital">
+        <img src="https://images.pexels.com/photos/33132346/pexels-photo-33132346.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" role="presentation" />
+        <h3>Community Health Digital Reporting</h3>
+        <p>Defined requirements and guided rollout of a CHIS with real-time dashboards for decision making.</p>
+        <ul class="tags"><li>Digital</li><li>Data</li></ul>
+      </article>
+      <article class="card case reveal" data-category="financing">
+        <img src="https://images.pexels.com/photos/33127835/pexels-photo-33127835.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" role="presentation" />
+        <h3>Investment Case for Community Health</h3>
+        <p>Costed interventions and developed an investment case to mobilize funding for CHPs and PHC commodities.</p>
+        <ul class="tags"><li>Financing</li><li>Advocacy</li></ul>
+      </article>
+      <article class="card case reveal" data-category="me">
+        <img src="https://images.pexels.com/photos/33127869/pexels-photo-33127869.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" role="presentation" />
+        <h3>Program Evaluation & Learning</h3>
+        <p>Designed a results framework and conducted an endline evaluation to inform national scale-up.</p>
+        <ul class="tags"><li>M&E</li><li>Learning</li></ul>
+      </article>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container mx-auto max-w-7xl px-4">
+    <div class="grid gap-6 md:grid-cols-3 py-6">
+      <div>
+        <h3>NextGen Consulting</h3>
+        <p>We help governments, NGOs, and health providers design, finance, and scale strong primary health care systems.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form id="newsletterForm" class="newsletter" novalidate>
+          <label for="newsletterEmail" class="sr-only">Email</label>
+          <input id="newsletterEmail" type="email" placeholder="Email address" required />
+          <button type="submit">Subscribe</button>
+          <p class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+    <p>Phone: +254727434767</p>
+    <p class="copyright">© 2025 NextGen Consulting. All rights reserved.</p>
+  </div>
+</footer>
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

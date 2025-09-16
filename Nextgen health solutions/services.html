@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Health systems strengthening, digital health, financing, monitoring & evaluation services." />
+  <title>Services · NextGen Health Solutions</title>
+  <link rel="preload" href="assets/images/hero.svg" as="image" />
+  <link rel="icon" href="assets/images/icon1.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-page="services">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header bg-white/80 dark:bg-slate-900/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
+  <div class="container mx-auto max-w-7xl px-4 flex items-center justify-between gap-4">
+    <a class="brand" href="index.html" aria-label="NextGen Home">
+      <span class="logo">🏥</span><span class="brand-text">NextGen Health Solutions</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <button id="navToggle" class="nav__toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">☰</button>
+      <ul id="navMenu" class="nav__menu">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="services.html" data-nav="services">Services</a></li>
+        <li><a href="case-studies.html" data-nav="cases">Case Studies</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark mode">🌓</button>
+  </div>
+</header>
+
+<main id="main" class="section py-8 md:py-10">
+  <div class="container mx-auto max-w-7xl px-4">
+    <h1 class="section-title reveal">Services</h1>
+    <p class="reveal">From policy to implementation, we deliver end-to-end support across the health system.</p>
+
+    <div class="accordion">
+      <details class="reveal">
+        <summary>Health Systems & Primary Health Care</summary>
+        <ul>
+          <li>Community health strategies and workforce planning</li>
+          <li>Service delivery redesign and quality improvement</li>
+          <li>Facility planning and referral optimization</li>
+        </ul>
+      </details>
+      <details class="reveal">
+        <summary>Digital Health & Data</summary>
+        <ul>
+          <li>Requirements, vendor selection, and interoperability</li>
+          <li>Dashboards for decision-making and routine analytics</li>
+          <li>Data governance and privacy by design</li>
+        </ul>
+      </details>
+      <details class="reveal">
+        <summary>Health Financing & Investment Cases</summary>
+        <ul>
+          <li>Costing, fiscal space analysis, and budget advocacy</li>
+          <li>Insurance benefits design and provider payment models</li>
+          <li>Investment cases for community health & PHC</li>
+        </ul>
+      </details>
+      <details class="reveal">
+        <summary>Monitoring, Evaluation & Learning</summary>
+        <ul>
+          <li>Results frameworks and indicator design</li>
+          <li>Baseline, midline, and endline evaluations</li>
+          <li>Learning agendas and adaptive management</li>
+        </ul>
+      </details>
+      <details class="reveal">
+        <summary>Capacity Building & Training</summary>
+        <ul>
+          <li>CHW/CHP training packages and job aids</li>
+          <li>Leadership & management for facility teams</li>
+          <li>Data use for decision making workshops</li>
+        </ul>
+      </details>
+    </div>
+
+    <div class="cta-row flex gap-3 mt-6">
+      <a class="btn primary" href="contact.html">Talk to an expert</a>
+      <button class="btn" data-open-modal="consult">Request consultation</button>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container mx-auto max-w-7xl px-4">
+    <div class="grid gap-6 md:grid-cols-3 py-6">
+      <div>
+        <h3>NextGen Health Solutions</h3>
+        <p>We help governments, NGOs, and health providers design, finance, and scale strong primary health care systems.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form id="newsletterForm" class="newsletter" novalidate>
+          <label for="newsletterEmail" class="sr-only">Email</label>
+          <input id="newsletterEmail" type="email" placeholder="Email address" required />
+          <button type="submit">Subscribe</button>
+          <p class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+    <p>Phone: +254727434767</p>
+    <p class="copyright">© 2025 NextGen Health Solutions. All rights reserved.</p>
+  </div>
+</footer>
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
